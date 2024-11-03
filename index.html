@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procrastination Paradise</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="min-h-screen bg-gradient p-8">
+        <div class="card">
+            <div class="card-header">
+                <h1 class="card-title">Procrastination Paradise</h1>
+                <p class="card-description">Where productivity comes to die!</p>
+            </div>
+            <div class="card-content">
+                <div class="space-y-2">
+                    <h3 class="section-title text-purple-700">Productivity Destroyer</h3>
+                    <button id="generateExcuse" class="button w-full bg-purple-500">
+                        Generate Excuse <i data-lucide="coffee"></i>
+                    </button>
+                    <p id="excuse" class="hidden animate-fade-in p-4 bg-purple-100 rounded-md text-purple-800 italic"></p>
+                </div>
+
+                <div class="space-y-2">
+                    <h3 class="section-title text-pink-700">Time Waster</h3>
+                    <button id="wasteTime" class="button w-full bg-pink-500">
+                        Waste Time <i data-lucide="clock"></i>
+                    </button>
+                    <p id="wastedTime" class="text-center text-pink-800 font-bold">
+                        You've wasted 0 virtual minutes!
+                    </p>
+                </div>
+
+                <div class="space-y-2">
+                    <h3 class="section-title text-red-700">Useless Fact Generator</h3>
+                    <button id="generateFact" class="button w-full bg-red-500">
+                        Learn Useless Fact <i data-lucide="brain"></i>
+                    </button>
+                    <p id="fact" class="hidden animate-fade-in p-4 bg-red-100 rounded-md text-red-800"></p>
+                </div>
+
+                <div class="space-y-2">
+                    <h3 class="section-title text-orange-700">Procrastination Progress</h3>
+                    <div class="progress-bar">
+                        <div id="progress" class="progress"></div>
+                    </div>
+                    <p id="progressText" class="text-center text-orange-800">
+                        0% procrastinated - Keep going!
+                    </p>
+                </div>
+
+                <div class="space-y-2">
+                    <h3 class="section-title text-yellow-700">Anti-Todo List</h3>
+                    <div class="flex space-x-2">
+                        <input type="text" id="newAntiTodo" placeholder="Add a task you don't want to do" class="input flex-grow">
+                        <button id="addAntiTodo" class="button bg-yellow-500">
+                            Add <i data-lucide="zap"></i>
+                        </button>
+                    </div>
+                    <ul id="antiTodoList" class="space-y-2"></ul>
+                </div>
+            </div>
+            <div class="card-footer">
+                Remember: Time you enjoy wasting is not wasted time!
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
